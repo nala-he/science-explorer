@@ -1,0 +1,56 @@
+report({
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/science-explorer_Home_Page_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20250417-144007/science-explorer_Home_Page_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "science-explorer_Home_Page_0_document_0_desktop.png",
+        "label": "Home Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://dev-science-explorer-for-all.pantheonsite.io/",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/science-explorer_Science_Activities_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20250417-144007/science-explorer_Science_Activities_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "science-explorer_Science_Activities_0_document_0_desktop.png",
+        "label": "Science Activities",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "https://dev-science-explorer-for-all.pantheonsite.io/science-activities",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -325
+          },
+          "rawMisMatchPercentage": 13.954618059767885,
+          "misMatchPercentage": "13.95",
+          "analysisTime": 801
+        },
+        "diffImage": "../bitmaps_test/20250417-144007/failed_diff_science-explorer_Science_Activities_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "science-explorer"
+});

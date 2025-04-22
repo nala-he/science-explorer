@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Science Activity Custom Module for Drupal.
+ */
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_node_view().
+ */
+function science_activity_node_view(array &$build, Node $node, EntityViewDisplayInterface $display, $view_mode) {
+  if ($node->getType() == 'science_activity' && $view_mode === 'full') {
+    // Manually inject title if it's not showing.
+    $build['custom_title'] = [
+      '#type' => 'markup',
+      '#markup' => '<h1>' . $node->label() . '</h1>',
+      '#weight' => -50,
+    ];
+   }
+   else if ($node->getType() == 'science_activity' && $view_mode === 'teaser'){
+    $audience_terms = [];
+    foreach ($node->get('field_audience')->referencedEntities() as $term) {
+      $audience_terms[] = $term->label();
+    }
+    $audience_str = implode(', ', $audience_terms);
+
+    $build['audience_info'] = [
+      '#type' => 'markup',
+      '#markup' => "<div class='highlight-box'>Perfect for: $audience_str</div>",
+      '#weight' => -10,
+    ];
+    
+    // Hide the normal field_audience so it's not shown twice
+    unset($build['field_audience']);
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function science_activity_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.science_activity':
+      return '<p>' . t('The Science Activity module enhances science activity nodes by displaying the target audience prominently.') . '</p>';
+  }
+}
+

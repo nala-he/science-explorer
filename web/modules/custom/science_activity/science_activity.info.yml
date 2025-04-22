@@ -1,0 +1,7 @@
+name: Science Activity
+type: module
+description: Adds audience highlights to science activity nodes.
+core_version_requirement: ^10 || ^11
+package: Custom
+version: 1.0
+

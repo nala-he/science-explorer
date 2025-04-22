@@ -1,0 +1,17 @@
+name: Science Explorer
+type: theme
+base theme: olivero
+core_version_requirement: ^10 || ^11
+libraries:
+  - science_explorer/global-styling
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer_top: 'Footer top'
+  footer_bottom: 'Footer bottom'

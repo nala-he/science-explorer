@@ -1,0 +1,31 @@
+{
+  "id": "science-explorer",
+  "viewports": [
+    { "label": "desktop", "width": 1200, "height": 900 }
+  ],
+  "scenarios": [
+    {
+      "label": "Home Page",
+      "url": "https://dev-science-explorer-for-all.pantheonsite.io/",
+      "referenceUrl": "",
+      "selectors": ["document"],
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Science Activities",
+      "url": "https://dev-science-explorer-for-all.pantheonsite.io/science-activities",
+      "selectors": ["document"]
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "engine": "puppeteer",
+  "report": ["browser"],
+  "debug": false
+}
+
