@@ -2,15 +2,13 @@
 
 A custom Drupal 11 website designed to engage users with interactive science activities, inspired by the Museum of Science, Boston.
 
-![screenshot](./screenshot.png)
 
----
 
 ## 🔍 Overview
 
 **Science Explorer** is a visually engaging and user-friendly platform for browsing science activities by audience, format, and duration. Built using the Drupal CMS and customized via PHP, CSS, and Twig templates, this project demonstrates my full-stack capabilities with site building, theme development, and visual testing.
 
----
+
 
 ## 🧰 Technologies Used
 
@@ -24,7 +22,7 @@ A custom Drupal 11 website designed to engage users with interactive science act
 - **BackstopJS** (automated regression testing)
 - **Terminus CLI** & SFTP (Pantheon integration)
 
----
+
 
 ## 🎨 Features
 
@@ -37,13 +35,13 @@ A custom Drupal 11 website designed to engage users with interactive science act
 - **Google Analytics 4** integration for real-time usage tracking
 - **Automated Visual Regression Tests** with BackstopJS
 
----
+
 
 ## 🚀 Deployment
 
 Live Site: [https://live-science-explorer-for-all.pantheonsite.io/](https://live-science-explorer-for-all.pantheonsite.io/)
 
----
+
 
 ## 🧪 Testing & Optimization
 
@@ -51,7 +49,7 @@ Live Site: [https://live-science-explorer-for-all.pantheonsite.io/](https://live
 - Configured **Google Analytics 4** to monitor user traffic and engagement across key pages
 - Planned A/B testing scenarios to optimize CTAs and content layout based on real user behavior
 
----
+
 
 ## 📂 File Structure Highlights
 
@@ -60,7 +58,7 @@ Live Site: [https://live-science-explorer-for-all.pantheonsite.io/](https://live
 /web/sites/default/files/ # Uploaded images/media
 
 
----
+
 
 ## 🧠 Lessons Learned
 
