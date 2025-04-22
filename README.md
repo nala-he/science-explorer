@@ -53,9 +53,9 @@ Live Site: [https://live-science-explorer-for-all.pantheonsite.io/](https://live
 
 ## 📂 File Structure Highlights
 
-/web/themes/custom/science_explorer/ # Custom theme (based on Olivero) 
-/web/modules/custom/science_activity/ # Custom module for node-level content injection 
-/web/sites/default/files/ # Uploaded images/media
+- /web/themes/custom/science_explorer/ # Custom theme (based on Olivero) 
+- /web/modules/custom/science_activity/ # Custom module for node-level content injection
+- /web/sites/default/files/ # Uploaded images/media
 
 
 
